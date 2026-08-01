@@ -12,8 +12,8 @@ name = "app"
 required-features = ["ipc"]
 
 [dependencies]
-minidumper-child = "0.3"
-sentry = { version = "0.48", default-features = false }
+minidumper-child = "0.5"
+sentry = { version = "0.49", default-features = false }
 thiserror = "2"
 serde = { version = "1", features = ["derive"], optional = true }
 serde_json = { version = "1", optional = true }
@@ -21,7 +21,7 @@ serde_json = { version = "1", optional = true }
 [dev-dependencies]
 actix-rt = "2.11"
 sadness-generator = "0.7"
-sentry-test-server = { git = "https://github.com/timfish/sentry-test-server.git", rev = "41cb654" }
+sentry-test-server = { git = "https://github.com/Jmgr/sentry-test-server.git", rev = "d68d160" } # TODO: update once https://github.com/timfish/sentry-test-server/pull/2 is merged
 
 [features]
 ipc = ["dep:serde", "dep:serde_json"]
